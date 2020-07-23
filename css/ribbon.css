@@ -1,0 +1,49 @@
+.ribbon{
+	color: #fff;
+}
+.rib {
+	font-size: 16px !important;
+	width: 500px;
+	position: relative;
+	background: #C50F0F;
+	text-align: center;
+	padding: 1em 2em;
+	margin: 1em auto 3em;
+}
+.rib:before, .rib:after {
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: -1em;
+	border: 1.5em solid #B41111;
+	z-index: -1;
+}
+.rib:before {
+	left: -2em;
+	border-right-width: 1.5em;
+	border-left-color: transparent;
+}
+.rib:after {
+	right: -2em;
+	border-left-width: 1.5em;
+	border-right-color: transparent;
+}
+.rib .rib-content:before, .rib .rib-content:after {
+	content: "";
+	position: absolute;
+	display: block;
+	border-style: solid;
+	border-color: #804f7c transparent transparent transparent;
+	bottom: -1em;
+}
+.rib .rib-content:before {
+	left: 0;
+	border-width: 1em 0 0 1em;
+}
+.rib .rib-content:after {
+	right: 0;
+	border-width: 1em 1em 0 0;
+}
+.ribbon .changeColor{
+	background-color: #5a190a;
+}
